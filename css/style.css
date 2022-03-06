@@ -40,7 +40,7 @@ body{
 }
 .landing::before{
     content: "Hi Our Special Artist ^_^";
-    position: absolute;
+    position: fixed;
     color: rgb(75 0 255 / 50%);
     font-size: 5rem;
     text-align: center;
