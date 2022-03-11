@@ -34,18 +34,20 @@ body{
 }
 .navbar .navbar-toggler:focus{box-shadow: none;}
 .navbar .navbar-toggler[aria-expanded="true"]{border-color: var(--green-color);}
-.landing{
-    background-color: var(--color-dark);
-    min-height: calc(100vh - 70px);
-}
+.landing{min-height: calc(100vh - 70px);}
 .landing::before{
-    content: "Hi Our Special Artist ^_^";
-    position: fixed;
-    color: rgb(75 0 255 / 50%);
-    font-size: 5rem;
-    text-align: center;
-    top: 70px;
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
+.landing .cont{z-index: 1; background-color: var(--color-dark);}
 .features .icon-holder{height: 200px;}
 .features .icon-holder svg{
     left: 50%;
